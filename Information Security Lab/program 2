@@ -1,0 +1,23 @@
+#include<stdio.h>
+  2 #include<string.h>
+  3 #include<stdlib.h>
+  4 void main(){
+  5 
+  6 char str[]="HelloWorld";
+  7 char str1[20];
+  8 char str2[20];
+  9 int i,len;
+ 10 len=strlen(str);
+ 11 for(i=0; i<len; i++){
+ 12 str1[i]=str[i]&127;
+ 13 printf("%c",str[i]);
+ 14 }
+ 15 printf("\n");
+ 16 for(i=0; i<len; i++){
+ 17 str2[i]=str[i]^127;
+ 18 printf("%c",str2[i]);
+ 19 }
+ 20 printf("\n");
+ 21 
+ 22 }
+ 23 
