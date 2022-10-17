@@ -1,0 +1,15 @@
+#include<stdio.h>
+  2 #include<string.h>
+  3 #include<stdio.h>
+  4 void main(){
+  5 char str[]="HelloWorld";
+  6 char str1[11];
+  7 int i,len;
+  8 len=strlen(str);
+  9 for(i=0; i<len; i++){
+ 10 str1[i]=str[i]^0;
+ 11 printf("%c",str1[i]);
+ 12 }
+ 13 printf("\n");
+ 14 }
+~                   
