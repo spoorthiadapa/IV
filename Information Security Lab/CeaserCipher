@@ -37,8 +37,6 @@ if (c > 'z'){c = c - 26;}
 encrypted += (char) c;
 }
 return encrypted;
-IS LAB
-Department of Information Technology
 }
 public static String decrypt(String str,int key)
 {
