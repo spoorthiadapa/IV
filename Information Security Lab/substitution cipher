@@ -1,0 +1,32 @@
+
+import java.io.*;
+import java.util.*;
+public class SubstitutionCipher
+{
+static Scanner sc = new Scanner(System.in);
+static BufferedReader br = new BufferedReader(new
+public static void main(String[] args)
+String a = "abcdefghijklmnopqrstuvwxyz";
+String b = "zyxwvutsrqponmlkjihgfedcba";
+System.out.print("Enter any string: ");
+String str = br.readLine();
+String encrypt = "";
+String decrypt = "";
+char ce;
+for(int i=0;i<str.length();i++)
+{
+ce = str.charAt(i);
+int j = a.indexOf(ce);
+encrypt = encrypt+b.charAt(j);
+}
+System.out.println("The encrypted data is: " +encrypt);
+char cd;
+for(int i = 0;i<encrypt.length();i++)
+{
+cd = encrypt.charAt(i);
+int k = b.indexOf(cd);
+decrypt = decrypt + a.charAt(k);
+}
+System.out.println("The decrypted
+}
+}
